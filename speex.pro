@@ -73,3 +73,5 @@ HEADERS += \
     $$PWD/libspeex/stack_alloc.h \
     $$PWD/libspeex/vbr.h \
     $$PWD/libspeex/vq.h
+
+DESTDIR = $$PWD
