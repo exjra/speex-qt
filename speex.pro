@@ -2,6 +2,7 @@ QT       -= core gui
 
 TARGET = speex
 TEMPLATE = lib
+
 CONFIG += staticlib
 DEFINES += QT_DEPRECATED_WARNINGS
 
@@ -74,4 +75,10 @@ HEADERS += \
     $$PWD/libspeex/vbr.h \
     $$PWD/libspeex/vq.h
 
-DESTDIR = $$PWD
+win32 {
+    DESTDIR = $$PWD
+}
+
+android {
+    DESTDIR = $$PWD/android
+}
